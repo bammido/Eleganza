@@ -9,7 +9,7 @@ export default async function Carousel() {
     })()
 
 
-    return<div className="flex overflow-x-scroll">
+    return<div className="flex overflow-x-scroll snap-proximity snap-x">
         <div className="flex items-center gap-16 justify-center p-4">
         {
                     res.data.photos.map((foto, i) => <Produto 

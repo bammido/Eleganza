@@ -40,7 +40,7 @@ export default function Produto({
     }).format(valor)
 
     return <>
-        <div className="flex flex-col bg-gray-200 w-44 h-80 pb-2 justify-between rounded animate-apear drop-shadow-lg border-2 border-black">
+        <div className="flex flex-col bg-gray-200 w-44 h-80 pb-2 justify-between rounded animate-apear drop-shadow-lg border-2 border-black snap-center">
             {!loading && <>
                 <Image {...imagem} className="w-44 h-52" alt={imagem.alt} width={176} height={250} />
                 <Link href={`/produtos/${id}`}>

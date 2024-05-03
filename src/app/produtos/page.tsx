@@ -20,14 +20,14 @@ export default async function Produtos() {
                     res.data.photos.map((foto, i) => <Produto 
                                                         key={foto.id}
                                                         id={foto.id}
-                                                        imagem={{
+                                                        image={{
                                                             alt: foto.alt,
                                                             src: foto.src.portrait
                                                         }}
-                                                        nome={`produto ${foto.id}`}
-                                                        valor={Math.random() * 100}
+                                                        name={`produto ${foto.id}`}
+                                                        value={Math.random() * 100}
                                                         loading={!foto}
-                                                        desconto={(i + 1) % 5 === 0 ? {valorProcentagem: Math.round(Math.random() * 10)} : undefined}  
+                                                        discount={(i + 1) % 5 === 0 ? {valuePercentage: Math.round(Math.random() * 10)} : undefined}  
                                                     />)
                 }   
 

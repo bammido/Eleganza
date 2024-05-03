@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
-    return <div className="bg-black h-80 w-full flex flex-col justify-between">
+    return <div className="bg-black gap-4 py-4 w-full flex flex-col justify-between">
         <div className="w-full flex justify-center">
             <Link href="/">
                 <Image width={150} height={150} className="cursor-pointer" src="/logo-branco.png" alt="Eleganza logo" />

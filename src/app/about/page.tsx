@@ -35,7 +35,7 @@ export default function About() {
             <h1 className="font-serif font-bold text-center">Bem-vindo à Eleganza - onde a elegância se encontra com a moda contemporânea de uma maneira única e sofisticada.</h1>
             <div className="flex gap-20">
                 <Image src="/foto-sobre.jpg" alt="foto mulher elegante" className="max-md:hidden" width={300} height={250} />
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 justify-center max-lg:justify-start">
                     <p className="font-serif">Na Eleganza, nossa paixão pela moda transcende simplesmente vestir-se bem; é sobre expressar sua <span className="text-amber-600 drop-shadow-md">individualidade</span> com estilo e classe. Desde nossa fundação, nos comprometemos a fornecer roupas elegantes que não apenas exalam confiança, mas também capturam a essência da beleza atemporal.</p>
                     <p className="font-serif">Nossa jornada começou com uma visão simples: oferecer uma seleção diversificada de peças que incorporam tanto as tendências da moda quanto a sofisticação clássica. Ao longo dos anos, esse compromisso permaneceu inabalável, e hoje nos orgulhamos de ser uma referência para aqueles que buscam peças únicas e de qualidade excepcional.</p>
                 </div>

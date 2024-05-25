@@ -13,10 +13,10 @@ export default function Cart({show, close} : {show: boolean, close: () => void})
   }).format(totalValueInCart)
 
     return <div className={`absolute right-0 top-0 h-screen ${show? "w-screen": "w-0"} transition-[width] transition-700 bg-white z-50`}>
-    {show && <div className="p-8 flex flex-col relative gap-8">
+    {show && <div className="p-8 flex flex-col grow relative gap-8">
       <span onClick={close} className="cursor-pointer self-end font-bold">X</span>
 
-      <div className="flex gap-4 flex-wrap justify-center">
+      <div className="flex gap-4 flex-wrap justify-center grow max-h-96 overflow-y-scroll">
         {products.map(prod => <ProductCart key={prod.id} {...prod} />)}
       </div>
 

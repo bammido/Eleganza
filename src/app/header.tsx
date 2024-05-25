@@ -8,12 +8,15 @@ import SideMenu from "./sideMenu";
 import Cart from "./cart/cart";
 import { FaShoppingCart } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
+import useHighContrastMode from "./hooks/useHighContrastMode";
 
 export default function Header() {
   const [showSideMenu, setShowSideMenu] = useState(false)
   const [showCart, setShowCart] = useState(false)
 
   const pathname = usePathname()
+
+  const isHighContrast  = useHighContrastMode()
 
     return <div className="fixed px-8 py-4 bg-gray-200 w-full z-50">
       <SideMenu show={showSideMenu} close={() => setShowSideMenu(false)} />
@@ -26,7 +29,12 @@ export default function Header() {
       
       <div className="flex justify-center">
           <Link href="/">
-            <Image width={150} height={150} className="cursor-pointer" src="/logo-preto.png" alt="Eleganza logo" />
+            <Image 
+              width={150} 
+              height={150} 
+              className="cursor-pointer" 
+              src={`${isHighContrast ? "/logo-branco.png" : "/logo-preto.png"}`} 
+              alt="Eleganza logo" />
           </Link>
       </div>
       <div className="flex gap-8 max-md:hidden">

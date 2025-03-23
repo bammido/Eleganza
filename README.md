@@ -1,4 +1,4 @@
-# 📋 README 
+# Eleganza
 
 ## [Eleganza site de moda](https://eleganza-6jmvsrkqf-bammidos-projects.vercel.app/about)
 
@@ -18,16 +18,15 @@ Bem-vindo ao Eleganza, um espaço onde a moda transcende o simples vestir para s
 # ⚙️ CONFIGURAÇÕES 
 
 ### 1. Clone o repositório
-→ https://bitbucket.org/gztec/frontendportalvendasv2/
+→ ``` git clone https://github.com/bammido/Eleganza.git ```
 ### 2. Instale as dependências
-→ $ npm install
+→ ``` npm install ```
 ### 3. Inicialize a Aplicação
-``` npm start ```
+→ ``` npm start ```
+* ### Acesso em http://localhost:3000
 
 ---
 
 ## 🔁 Compatibilidade das versões do Node e pontos específicos
 - Para melhor experiência é recomendado atualizar o node para versão 18.xx
   ---
- 
-* ### Acesso em http://localhost:3000
